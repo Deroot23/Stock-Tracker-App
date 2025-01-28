@@ -9,7 +9,32 @@
   left: 133px;
   margin-bottom: 15px;
   margin-top: 20px;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+body.light-mode #sideBar {
+  background-color: #f4f4f4;
+}
+body.light-mode .sideBarContent {
+  color: #000;
+}
+body.light-mode #dropDownImg {
+  filter: invert(0);
+}
+body.dark-mode {
+  background-color: white;
+  color: #ffffff;
+}
+body.dark-mode #sideBar {
+  background-color: #333333;
+}
+body.dark-mode .sideBarContent {
+  color: #fff;
+}
 
+body.dark-mode #dropDownImg {
+  filter: invert(1);
 }
 section{
   display: flex;
@@ -37,7 +62,7 @@ input{
   box-sizing: border-box;
   width: 70%;
   height: 25px;
-  background-color: black;
+  background-color:transparent;
   border-radius: 5px;
   margin-top: 15px;
   margin-bottom: 10px;
