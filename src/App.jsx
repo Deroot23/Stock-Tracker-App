@@ -1,15 +1,21 @@
 import React, { useState, useEffect } from "react";
-import Toggle from "./assets/toggle.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import Toggle from "./assets/toggle.png"
+import { faToggleOn, faToggleOff } from '@fortawesome/free-solid-svg-icons';
 import Logo from "./assets/logo.png"
 import Profile from "./assets/profile.png"
-import Dash from "./assets/dash.png"
+// import Dash from "./assets/dash.png"
+import { faRectangleList } from "@fortawesome/free-solid-svg-icons";
 import Broker from "./assets/broker.png"
+import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 import Analytics from "./assets/analytics.png"
 import team from "./assets/team.png"
-import dropDown from "./assets/dropdown.png"
+// import dropDown from "./assets/dropdown.png"
+import {faChevronDown} from "@fortawesome/free-solid-svg-icons"
 import options from "./assets/options.png"
 import tesla from "./assets/icons1.png"
-import apple from "./assets/ICONS2.png"
+// import apple from "./assets/ICONS2.png"
+import { faAppleAlt } from "@fortawesome/free-solid-svg-icons";
 import tempus from "./assets/icons3.png"
 import amazon from "./assets/icons4.png"
 import './App.css'
@@ -44,12 +50,13 @@ useEffect(() => {
   return (
     <>
       <div id='sideBar'>
-       <img
+       {/* <img
           id="toggle"
           src={Toggle}
           alt="togglebar"
           onClick={toggleTheme}
-        />
+        /> */}
+        <FontAwesomeIcon icon={isDarkMode ? faToggleOff : faToggleOn} aria-hidden="true" id="toggle" onClick={toggleTheme} />
       
       <section>
         <img id="logo" src={Logo} alt="logo" />
@@ -61,19 +68,21 @@ useEffect(() => {
       </form>
       <div id="content">
         <div className="sideBarContent">
-          <img src={Dash} alt="" />
+          {/* <img src={Dash} alt="" id="icons" /> */}
+          <FontAwesomeIcon icon={faRectangleList} id="icons" />
           <h3>Dashboard</h3>
         </div>
         <div className="sideBarContent">
-          <img src={Broker} alt="" />
+          <img src={Broker} alt="" id="icons" />
           <h3>Brokerage Account</h3>
         </div>
         <div className="sideBarContent">
-          <img src={Analytics} alt="" />
+          {/* <img src={Analytics} alt="" id="icons" /> */}
+         <FontAwesomeIcon icon={faChartLine} id="icons" />
           <h3>Analytics Integration</h3>
         </div>
         <div className="sideBarContent">
-          <img src={team} alt="" />
+          <img src={team} alt="" id="icons" />
           <h3>The Team</h3>
         </div>
         
@@ -82,7 +91,8 @@ useEffect(() => {
 
       <div className="watchListContent">
         <div id="watchListHeader"  onClick={toggleWatchList} >
-          <img id="dropDownImg" src={dropDown} alt="" style={{ transform: isWatchListVisible ? 'rotate(0deg)' : 'rotate(180deg)', transition: 'transform 0.3s ease' }} />
+          {/* <img id="dropDownImg" src={dropDown} alt="" style={{ transform: isWatchListVisible ? 'rotate(0deg)' : 'rotate(180deg)', transition: 'transform 0.3s ease' }} /> */}
+          <FontAwesomeIcon icon={faChevronDown} id="dropDownImg" style={{ transform: isWatchListVisible ? 'rotate(0deg)' : 'rotate(180deg)', transition: 'transform 0.3s ease' }} />
           <h3>My Watch List</h3>
           <img src={options} alt="" />
         </div>
@@ -96,7 +106,8 @@ useEffect(() => {
                 </span>
               </div>
               <div className="sideBarContent">
-                <img src={apple} alt="" />
+                {/* <img src={apple} alt="" /> */}
+                <FontAwesomeIcon icon={faAppleAlt} />
                 <h3>Apple</h3>
                 <span>
                   411.70 <sub className="green">411.70</sub>

@@ -10,13 +10,16 @@
   margin-bottom: 15px;
   margin-top: 20px;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.7rem;
   transition: transform 0.3s ease;
 }
 body.light-mode #sideBar {
   background-color: #f4f4f4;
 }
 body.light-mode .sideBarContent {
+  color: #000;
+}
+body.light-mode #icons{
   color: #000;
 }
 body.light-mode #dropDownImg {
@@ -34,7 +37,7 @@ body.dark-mode .sideBarContent {
 }
 
 body.dark-mode #dropDownImg {
-  filter: invert(1);
+  filter: invert(0);
 }
 section{
   display: flex;
@@ -43,7 +46,6 @@ section{
   align-items: center;
   width: 85%;
   margin: auto;
- 
 }
 section img{
   position: relative;
