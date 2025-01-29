@@ -1,0 +1,13 @@
+nav{
+    background-color: black;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+nav>section
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
