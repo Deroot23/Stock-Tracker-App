@@ -1,0 +1,288 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'myfonts';
+    src: url(./Roboto-VariableFont_wdth\,wght.ttf);
+}
+.dashboard{
+    width: 100%;
+    height: 250vh;
+    padding: 20px 40px;
+    background-color: #000000;
+    color: white;
+    font-family: 'myfonts';
+}
+
+.header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid purple;    */
+    justify-content: space-between;
+
+}
+
+.logo{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+
+    
+}
+
+.logo img{
+    width: 32px;
+}
+
+.icon{
+    /* width: 10%; */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    /* border: 2px solid yellow; */
+}
+
+.icon img{
+    width: 32px;
+}
+
+.header2{
+    width: 100%;
+    height: 10vh;
+    /* border: 2px solid yellow; */
+}
+
+.header-text{
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text h4{
+    font-size: 18px;
+}
+
+
+
+.primary{
+    background-color: #00B47D;
+    padding: 8px 24px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    
+}
+.secondary{
+    background-color: #E31937;
+    padding: 8px 24px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+.header-text span{
+    display: flex;
+    gap: 16px;
+}
+
+.stock1{
+    width: 100%;
+    height: 40vh;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    color: black;
+    gap: 10px;
+}
+
+.stock-trends{
+    width: 40%;
+    height: 40vh;
+    background-color: white;
+    padding: 5px 10px;
+    /* border: 2px solid red; */
+}
+
+.stock-trends span{
+    width: 100%;
+    display: flex;
+    /* border: 2px solid pink; */
+    gap: 10px;
+
+}
+
+.stock-image {
+    /* border: 2px solid green; */
+    width: 100% ;
+    height: 35vh;
+}
+
+.stock-image img{
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+}
+
+.price-alert{
+    width: 60%;
+    height: 40vh;
+    border:2px solid green;
+    background-color: white;
+}
+
+.stock2{
+    width: 100%;
+    height: 50vh;
+    border: 2px solid white;
+    margin-top: 30px;
+    color: black;
+    background-color:white ;
+}
+
+.stock2 span{
+    width:100%;
+    height: 20px;
+    display: flex;
+    gap: 10px;
+    /* border: 2px solid red; */
+    font-size: 16px;
+}
+
+.market-trend{
+    width: 100%;
+    height: 40vh;
+}
+.market-trend img{
+    width: 100%;
+    height: 40vh;
+}
+
+.stock3{
+    width: 100%;
+    height: 40vh;
+    background-color: white;
+    margin-top: 30px;
+}
+.user-container{
+    display: none;
+
+}
+
+@media screen and (max-width:425px) {
+
+    .dashboard  {
+    background-color: #000000;
+        
+
+    }
+    .user-container{
+        width: 100%;
+        /* height: 100px; */
+        display: flex;
+        /* background-color:blue; */
+        flex-direction: column;
+        gap: 4px;
+    }
+    .user{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .user-image{
+        width: 30px;
+    }
+    .user-image img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .mobile-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .search-container input{
+        padding: 6px;
+        outline: none;
+        width: 150px;
+        background: none;
+        border: 2px solid white;
+        color: white;
+    }
+
+    .search-container input::placeholder{
+        color: white;
+
+    }
+
+    .hamburger-menu{
+        width: 35px;
+        /* height: 40px; */
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+    }
+
+    .hamburger-menu span{
+        width: 100%;
+        height: 4px;
+        background-color: white;
+    }
+    .hamburger-menu span:nth-child(even){
+        width: 50%;
+        align-self: flex-end;
+
+    }
+
+
+    .header2 h1{
+        font-size: 16px;
+    }
+
+    .header2 h4{
+        font-size: 16px;
+    }
+
+    .header-text .secondary{
+        display: none;
+    }
+
+    .header-text img{
+        display: none;
+    }
+
+    .stock1{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+     }
+
+    .stock-trends{
+        width: 100%;
+    }
+    
+    .price-alert{
+        width: 100%;
+    }
+
+    .icon{
+        display: none;
+    }
+
+ 
+}
