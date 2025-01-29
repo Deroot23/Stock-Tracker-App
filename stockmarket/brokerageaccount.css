@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.brokerage-account-contents{
+    width: 100%;
+    background-color: white;
+    padding: 16px;
+}
+
+.dashboard{
+    /* border: 2px solid red; */
+    gap: 16px;
+}
+
+.dashboard-welcome-page{
+    margin-top: 10px;
+}
+
+.brokerage-account-contents{
+    margin-top: 20px;
+}
+
+
+.partners{
+    display: flex;
+    flex-wrap: wrap;
+   
+    gap: 12px;
+    
+}
+
+.partner-card{
+    width: 200px;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+
+    padding: 22px;
+}
+
+.partner-logo{
+    width: 100%;
+}
+
+.partner-logo img{
+    width: 100%;
+    object-fit: cover;
+}
+.rating{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.rating img{
+    width: 100%;
+    object-fit: contain;
+}
+
+
+@media screen and (max-width: 425px) {
+    .partner-card{
+        width: 150px;
+        /* border: 2px solid red; */
+    }
+
+    .primary-button{
+        padding: 4px 8px;
+        font-size: 10px;
+        width: 70%;
+    }
+}
