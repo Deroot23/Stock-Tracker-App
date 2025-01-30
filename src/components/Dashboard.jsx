@@ -1,90 +1,94 @@
-import '../assets/css/dashboard.css';
-// import { trend} from '../assets/images/trend.svg';
+import "../assets/css/dashboard.css";
+import trend from "../assets/images/trend.svg"; // Corrected import
+import track from "../assets/images/track.svg"; // Corrected import
+import history from "../assets/images/history.svg"; // Corrected import
+import price from "../assets/images/price.svg";
+import menu from "../assets/images/menu.svg";
+import notificate from "../assets/images/notificate.svg";
+import hambegr from "../assets/images/hambegr.svg";
+import sail from "../assets/images/sail.svg";
+import setting from "../assets/images/setting.svg";
 
-function dashboard( ) {
-    return (
-        <div>
-            <div className="dashboard">
-        <div className="user-container">
-            <div className="user">
-                <div className="brand-logo">
-                    <img src="./images/saillogo.png" alt=""/>
-                </div>
-                <div className="user-image">
-                    {/* <img src={trend} alt=""/> */}
-                </div>
-            </div>
+function Dashboard() {
+  const getCurrentDate = () => {
+    const options = {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    };
+    return new Date().toLocaleDateString("en-US", options);
+  };
 
-            <div className="mobile-menu">
-                <div className="search-container">
-                    <input type="text" placeholder="search"/>
-                </div>
+  // Capitalized component name
+  return (
+    <div className="dashboard">
+         <div className="sail-header">
+          <div className="sail">
+            <img src= {sail}alt="Sail Logo" />
+            <span>Stock <br /> Tracker</span>
+          </div>
+          <img src={hambegr} alt="" id="hamg" />
+          </div>
 
-                <div className="hamburger-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+        <div className="mobile-menu">
 
-            </div>
-
+      </div>
+      <div className="header">
+        <div className="logo">
+             <img src={hambegr} alt="" />
+           <p>Dashboard</p>
         </div>
-        <div className="header">
-            <div className="logo">
-            <span><img src="./images/Vector.png" alt=""/></span>
-            <p>Dashboard</p>
-            </div>
+ 
 
-            <div className="icon">
-                <img src="./images/notice.png" alt=""/>
-                <img src="./images/vector2.png" alt=""/>
-            </div>
-
+        <div className="icon">
+          <img src= {notificate} alt="" />
+          <img src={setting} alt="" />
         </div>
-        <div className="header2">
-            <h1>Hi, Welcome Back Jude</h1>
-            <div className="header-text">
-                <h4>Friday,31st January 2025</h4>
-               <span>
-                <button className="primary"> Get Started</button>
-                <button className="secondary"> Deposit</button>
-                </span>
-            </div>
-        </div> <br /><br /><br />
+      </div>
+      <div className="header2">
+        <div className="">
+          <h1>Hi, Welcome Back Jude</h1>
+
+          <h4 className="header-text">{getCurrentDate()}</h4>
+        </div>
+        <div id="buttons">
+          <button className="primary">Get Started</button>
+          <button className="secondary">Deposit</button>
+          <img src={menu} alt="hsd" id="menu"  />
+        </div>
+      </div>
+      <br /> <br />
+      <div className="">
         <div className="stock1">
-            <div className="stock-trends">
-                <img src="./assets/images/stock trend.svg" alt=""/>
-                <span>
-                     <h4>Explore Stock Trends</h4>
-                </span>
-               <div className="stock-image">
-                </div>
-            </div>
-
-            <div className="price-alert">
-
-
-            </div>
-
+          <div className="stock-trends tt">
+            <section>
+              <img src={trend} alt="Trend Icon" />
+              <h4>Explore Stock Trends</h4>
+            </section>
+          </div>
+          <div className="price-alert tt">
+            <section>
+              <img src={price} alt="price alert" />
+              <h4>Price Alert</h4>
+            </section>
+          </div>
         </div>
-        <div className="stock2">
-            <span>
-                <img src="./images/icon3.png" alt=""/>
-                <h4>Track Your Stocks</h4>
-            </span>
-            <br/>
-            <div className="market-trend">
-             </div>
-
-           </div>
-
-           <div className="stock3">
-            
-        </div> 
-    </div> 
+        <div className="stock2 tt">
+          <section>
+            <img src={track} alt="Trend Icon" />
+            <h4>Track Your Stocks</h4>
+          </section>
         </div>
-    );
+        <div className="stock3 tt">
+          <section>
+            <img src={history} alt="Trend Icon" />
+            <h4>History Trend</h4>
+          </section>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default dashboard;
+export default Dashboard;

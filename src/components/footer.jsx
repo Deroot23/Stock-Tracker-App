@@ -13,7 +13,7 @@ function Footer() {
                 <img src="/src/assets/images/profile.svg" alt="profile" />
                 <h2>Legal Disclaimer!</h2>
               </div>
-              <p>
+              <p className="disclaimer">
                 Stock prices and data are provided for informational purposes
                 only. StockTrack is not responsible for any financial decisions
                 made based on this data.
@@ -78,11 +78,11 @@ function Footer() {
           <div className="footer-content">
             <div id="newsletter">
               <div className="pa4-l">
-                <form className=" ">
-                    <h2>             Sign up for our newsletter
+                <form className="">
+                    <h2 className="disclaimer"> Sign up for our newsletter
                     </h2>
                      <div className="">
-                      <p>
+                      <p className="disclaimer">
                         The latest news,article and resources, sent to your
                         inbox weekly.
                       </p>
@@ -206,7 +206,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <hr />
+        {/* <hr /> <br />
         <div id="copyright">
           <a href="http://" target="_blank" rel="noopener noreferrer">
             &copy; 2025 Stock Market Tracker. All Rights Reserved
@@ -228,7 +228,7 @@ function Footer() {
               </a>
             </li>
           </div>
-        </div>
+        </div> */}
       </footer>
     </>
   );

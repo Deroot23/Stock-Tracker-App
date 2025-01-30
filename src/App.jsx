@@ -1,14 +1,12 @@
   import Footer from './components/footer'
-  import Navbar from '../src/components/Nav'
+  // import Navbar from '../src/components/Nav'
 import Dashboard from './components/dashboard'
  function App() {
- 
   return (
     <> 
-    <Navbar/>
-       <Footer/>
-       <Dashboard/>
-      
+    {/* <Navbar/> */}
+    <Dashboard/>
+     <Footer/>
     </>
   )
 }
