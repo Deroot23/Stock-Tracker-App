@@ -189,6 +189,7 @@
 
     .dashboard  {
     background-color: #000000;
+    padding: 10px;
         
 
     }
@@ -238,10 +239,13 @@
         gap: 4px;
 
     }
+
 .sail{
     display: flex;
     color: white;
     font-size: 18px;
+    justify-content: center;
+    align-items: center;
 }
 .sail-header{
     display: flex;

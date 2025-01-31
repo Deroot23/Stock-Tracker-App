@@ -1,11 +1,11 @@
   import Footer from './components/footer'
-  // import Navbar from '../src/components/Nav'
-import Dashboard from './components/dashboard'
+//  import Dashboard from './components/Dashboard'
+import Brokage from './components/Brokage'
  function App() {
   return (
     <> 
-    {/* <Navbar/> */}
-    <Dashboard/>
+     {/* <Dashboard/> */}
+    <Brokage />
      <Footer/>
     </>
   )
