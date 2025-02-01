@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import Toggle from "./assets/toggle.png"
@@ -134,4 +135,19 @@ useEffect(() => {
 }
 
 
+=======
+  import Footer from './components/footer'
+//  import Dashboard from './components/Dashboard'
+import Brokage from './components/Brokage'
+ function App() {
+  return (
+    <> 
+     {/* <Dashboard/> */}
+    <Brokage />
+     <Footer/>
+    </>
+  )
+}
+
+>>>>>>> Footer
 export default App
