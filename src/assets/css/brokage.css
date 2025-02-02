@@ -105,46 +105,108 @@
   }
 a:hover{
    color: white;}
+   .mobile  {
+    display: none;
+  }
+
+
  
 
-   @media (max-width: 800px) {
-    .trusted-partners {
-      padding: 15px;
-    }
-  
-    .trusted-partners-section > div {
+  /* STYLE FOR teAm */
+  .team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 10px;
+    background-color: white;}
+
+.team-div{
+      display: flex;
       flex-direction: row;
-      gap: 4px;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+      padding: 30px;
+      width: 100%;
+      border-radius: 10px;
+     }
+     .team-member {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
     }
-  
-    .trusted-partners-section > div div {
-      padding: 10px 15px;
+    
+    .team-member img {
+      width: 120px;
+      height: 120px;
+       border-radius: 50%;
+      margin-bottom: 10px;
     }
-    .icon-width {
-      width: 100px;
+    
+    .team-member p {
+      margin: 5px 0;
     }
-  
-    .visit-site-button {
-      padding: 6px 14px;
-      font-size: 20px;
-    }
-  
-    .visit-site-button span img {
-      width: 12px;
-    }
-    @media (max-width: 600px) {
-      .onclick {
-        display: none;
+ 
+     @media (max-width: 800px) {
+      .trusted-partners {
+        padding: 15px;
+      }
+      .mobile  {
+        display: flex;
+      }
+      .trusted-partners-section > div {
+        flex-direction: row;
+        gap: 4px;
       }
     
-      .see-more-button {
-        display: block;
+      .trusted-partners-section > div div {
+        padding: 10px 15px;
+      }
+      .icon-width {
+        width: 100px;
+      }
+    
+      .visit-site-button {
+        padding: 6px 14px;
+        font-size: 20px;
+      }
+    
+      .visit-site-button span img {
+        width: 12px;
       }
       .window{
         display: none;
       }
+      .team-mobile{
+        display: flex;
+        flex-direction: column;
+        }
+        
+.team-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-block: 20px;
+  padding-inline: 0px;
+
+  width: 100%;
+  border-radius: 10px;
+ }
+ .team-member {
+  
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
     }
-  }
-  .mobile  {
-    display: none;
-  }
+    .team-para{
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+    }

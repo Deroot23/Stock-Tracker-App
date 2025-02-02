@@ -1,14 +1,14 @@
 import "../assets/css/dashboard.css";
-import trend from "../assets/images/trend.svg"; // Corrected import
-import track from "../assets/images/track.svg"; // Corrected import
-import history from "../assets/images/history.svg"; // Corrected import
+import trend from "../assets/images/trend.svg";  
+import track from "../assets/images/track.svg"; 
+import history from "../assets/images/history.svg"; 
 import price from "../assets/images/price.svg";
 import menu from "../assets/images/menu.svg";
 import notificate from "../assets/images/notificate.svg";
 import hambegr from "../assets/images/hambegr.svg";
 import sail from "../assets/images/sail.svg";
 import setting from "../assets/images/setting.svg";
-
+import Footer from "../components/footer"
 function Dashboard() {
   const getCurrentDate = () => {
     const options = {
@@ -22,7 +22,8 @@ function Dashboard() {
 
   // Capitalized component name
   return (
-    <div className="dashboard">
+ < >
+      <div className="dashboard">
          <div className="sail-header">
           <div className="sail">
             <img src= {sail}alt="Sail Logo" />
@@ -88,6 +89,8 @@ function Dashboard() {
         </div>
       </div>
     </div>
+    <Footer/>
+ </ >
   );
 }
 

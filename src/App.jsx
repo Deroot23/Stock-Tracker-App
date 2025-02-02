@@ -1,14 +1,23 @@
-  import Footer from './components/footer'
 //  import Dashboard from './components/Dashboard'
-import Brokage from './components/Brokage'
- function App() {
+//  import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Brokage from './components/Brokage'
+import Team from './components/team'
+
+function App() {
   return (
     <> 
-     {/* <Dashboard/> */}
-    <Brokage />
-     <Footer/>
-    </>
-  )
+      {/* <BrowserRouter>
+ <Routes>
+      <Route index element={<Dashboard />} />
+     <Route path="blogs" element={<Brokage />} />
+     <Route path="contact" element={<Team />} />
+     <Route path="*" element={<NoPage />} />
+  </Routes>
+</BrowserRouter> */}
+<Team />
+         </>
+ )
+ 
 }
 
 export default App

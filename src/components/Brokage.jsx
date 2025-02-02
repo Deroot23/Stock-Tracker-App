@@ -18,6 +18,8 @@ import mindmoney from "../assets/images/mindmoney.svg";
 import swiss from "../assets/images/swiss.svg";
 import FPMarketsLog from "../assets/images/FPMarketsLog.svg";
 import capex from "../assets/images/capex.svg";
+import Footer from "../components/footer"
+
   
 function Brokage() {
   
@@ -62,7 +64,8 @@ function Brokage() {
 
   // Capitalized component name
   return (
-    <div className="dashboard">
+   <>
+ <div className="dashboard">
       <div className="sail-header">
         <div className="sail">
           <img
@@ -227,6 +230,8 @@ function Brokage() {
         </div>
       </div>
      </div>
+     <Footer/>
+   </>
   );
 }
 
