@@ -8,8 +8,7 @@ import notificate from "../assets/images/notificate.svg";
 import hambegr from "../assets/images/hambegr.svg";
 import sail from "../assets/images/sail.svg";
 import setting from "../assets/images/setting.svg";
-import Footer from "../components/footer"
-function Dashboard() {
+ function Dashboard() {
   const getCurrentDate = () => {
     const options = {
       weekday: "long",
@@ -89,8 +88,7 @@ function Dashboard() {
         </div>
       </div>
     </div>
-    <Footer/>
- </ >
+  </ >
   );
 }
 

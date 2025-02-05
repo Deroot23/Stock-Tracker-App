@@ -32,7 +32,8 @@
     width: 100%;
     background-color: black;
     padding: 20px 30px;
-    color: white;  }
+    color: white;
+    }
     .white-background{ 
        background-color: white;
        padding: 10px;
@@ -53,19 +54,11 @@
       padding: 10px;
       border-radius: 10px;
     }
-  .rate-section img {
-    display: inline-block;
-    margin-right: 5px;  
-  }
-  .rate-section   {
-    display: flex;
-    }
-   .rate-section img {
-    display: inline-block;
-   }
+
+ 
   
   .visit-site-button {
-    display: inline-block;
+    display: flex;
     color: white;
     background-color: green;
     padding: 10px 20px;
@@ -78,6 +71,9 @@
   .visit-site-button span img {
     margin-left: 5px;
     width: 15px;
+  } 
+  .visit-site-button span  {
+     width: fit-content;
   } 
   .onlick {
     display: flex;
@@ -210,3 +206,14 @@ a:hover{
       font-weight: bold;
       font-size: 20px;
     }
+    .rate-section img {
+      display:flex;
+      margin-right: 5px; 
+      /* width: 20px;  */
+    }
+    .rate-section   {
+      display: flex;
+      
+         /* width: fit-content; */
+      }
+      

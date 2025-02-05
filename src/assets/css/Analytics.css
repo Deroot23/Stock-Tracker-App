@@ -1,0 +1,269 @@
+ 
+  
+  #container{
+    background: black;
+    width: 1100px;
+    height: 1051px;
+    border-radius: 10px;
+    padding: 40px;
+  }
+  section{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    
+  }
+  #vector{
+    margin-right: 10px;
+  }
+  
+  h2{
+    /* border: 1px solid pink; */
+    text-align: left;
+    /* font-size: 24px; */
+    
+  }
+  h3{
+    text-align: left;
+    font-size: 25px;
+    font-weight: 400;
+  }
+  h4{
+    font-size: 22px;
+  }
+  h5{
+    font-size: 18px;
+  }
+  p{
+    text-align: left;
+  }
+  span{
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+  }
+  
+  button {
+    border-radius: 18px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    margin-right: 10px;
+  
+  }
+  #subhead{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 20px;
+  }
+  #sign{
+    background: rgb(53, 199, 175);
+  }
+  #sign:hover{
+    background: #06513e;
+    border: 2px solid goldenrod;
+  }
+  #deposit{
+    background: red;
+    
+  }
+  #deposit:hover{
+    background: rgb(76, 8, 8);
+    border: 2px solid goldenrod;
+  }
+  #container_content{
+    background: white;
+    color: black;
+    padding: 15px;
+  }
+  #wrapper{
+    display: flex;
+    margin-bottom: 50px;
+  }
+  
+  #sales{
+    background:#F7971D ;
+    width: 470px;
+    height: 155px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    
+  }
+  #sales > img{
+    position: relative;
+    left: 400px;
+    bottom: 155px;
+    width: 35px;
+  }
+  
+  
+  #sales > span {
+    /* border: 1px solid black; */
+    font-size: 10px; 
+    width: 130px;
+    position: relative;
+    bottom: 25px;
+  }
+  #s_shade{
+    text-align: center;
+    width: 45px;
+    height: 15px;
+    background-color:#51400c8b;
+    
+  }
+  #prices{
+    background:#18C4A9 ;
+    width: 470px;
+    height: 155px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    
+  }
+  #prices > span {
+    font-size: 10px; 
+    width: 130px;
+    position: relative;
+    bottom: 25px;
+  }
+  #p_shade{
+    text-align: center;
+    width: 45px;
+    height: 15px;
+    background-color:#0e766983;
+    
+  }
+  #prices > img{
+    position: relative;
+    left: 410px;
+    bottom: 155px;
+    background-color: #0e766983;
+    padding: 5px;
+    border-radius: 50%;
+    width: 15px;
+    height:20px ;
+  }
+  #container_img{
+    /* border: 1px solid rgb(72, 15, 9); */
+    width: 1000px;
+    position: relative;
+    left: 80px;
+  }
+  #chart{
+    height: 330px
+  }
+  #align{
+    position: relative;
+    bottom: 100px;
+  }
+  
+  
+  @media (max-width: 600px ){
+    #head {
+      width: 1090px;
+      font-size: 25px;
+     
+    }
+    #vector{
+      width: 35px;
+    }
+    h3
+    {font-size: 40px;}
+    h4{
+      font-size: 32px;
+    }
+    
+    h5{
+      font-size: 32px;
+    }
+    
+    #subhead{
+      font-size: 30px;
+    
+    }
+    #wrapper{
+      display: flex;
+      flex-direction: column;
+    }
+    #sales,
+    #prices{
+      width: 1000px;
+      height:300px;
+      padding-bottom: 10px;
+      
+      
+    }
+    #p_shade, #s_shade{
+      font-size: 23px;
+      width: 65px;
+      height: 32px;
+      position: relative;
+      top: 20px;
+      
+    }
+    #sales > span{
+      font-size: 30px;
+      gap: 10px;
+      width: 280px;
+      position: relative;
+      bottom: 65px; 
+    }
+    #sales > img{ 
+      position: relative;
+      left: 900px; 
+      bottom: 320px;
+      width: 55px;
+      height:55px ;
+    }
+    
+    #prices > span{
+      font-size: 30px;
+      gap: 10px;
+      width: 280px;
+      position: relative;
+      bottom: 65px; 
+    }
+    #prices > img{ 
+      border: 1px solid black;
+      position: relative;
+      left: 900px; 
+      bottom: 320px;
+      width: 35px;
+      height:35px ;
+    }
+    #container{
+      background: black;
+      /* width: 1100px; */
+      height: 100%;
+      border-radius: 10px;
+      padding: 40px;
+    }
+    #chart{
+      align-items: center;
+      width:1200px;
+      height: 570px;
+      position: relative;
+      right: 150px;
+    }
+    #align{
+      position: relative;
+      bottom: 860px;
+      left: 700px;
+      width: 300px;
+    }
+  
+  
+    }
+    #trendind{
+      width: 100%;
+    }

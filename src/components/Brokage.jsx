@@ -1,4 +1,4 @@
-import "../assets/css/dashboard.css";
+// import "../assets/css/dashboard.css";
 import "../assets/css/brokage.css";
 
 import menu from "../assets/images/menu.svg";
@@ -18,20 +18,17 @@ import mindmoney from "../assets/images/mindmoney.svg";
 import swiss from "../assets/images/swiss.svg";
 import FPMarketsLog from "../assets/images/FPMarketsLog.svg";
 import capex from "../assets/images/capex.svg";
-import Footer from "../components/footer"
 
-  
 function Brokage() {
-  
   const RateSection = ({ rating, href }) => {
     return (
       <>
-        <section className="rate-section">
+        <main className="rate-section" style={{padding:"0", display:"flex"}}>
           {[...Array(5)].map((_, index) => (
             <img key={index} src={rate} alt="rate" />
           ))}
           <p>{rating}</p>
-        </section>
+        </main>
         <a
           href={href}
           target="_blank"
@@ -64,174 +61,201 @@ function Brokage() {
 
   // Capitalized component name
   return (
-   <>
- <div className="dashboard">
-      <div className="sail-header">
-        <div className="sail">
-          <img
-            src={co2}
-            alt="Sail Logo"
-            style={{ width: "35px", marginRight: "10px" }}
-          />
-          <span
-            style={{
-              fontSize: "20px",
-              fontWeight: "bold",
-              textAlign: "center",
-            }}
-          >
-            Brokerage Account
-          </span>
+    <>
+      <div className="dashboard">
+        <div className="sail-header">
+          <div className="sail">
+            <img
+              src={co2}
+              alt="Sail Logo"
+              style={{ width: "35px", marginRight: "10px" }}
+            />
+            <span
+              style={{
+                fontSize: "20px",
+                fontWeight: "bold",
+                textAlign: "center",
+              }}
+            >
+              Brokerage Account
+            </span>
+          </div>
+          <img src={hambegr} alt="" id="hamg" />
         </div>
-        <img src={hambegr} alt="" id="hamg" />
-      </div>
-      <div className="mobile-menu"></div>
-      <div className="header">
-        <div className="logo">
-          <img src={co2} alt="" />
-          <p
-            style={{
-              fontSize: "20px",
-              fontWeight: "bold",
-              textAlign: "center",
-            }}
-          >
-            {" "}
-            Brokerage Account
-          </p>
-        </div>
+        <div className="mobile-menu"></div>
+        <div className="header">
+          <div className="logo">
+            <img src={co2} alt="" />
+            <p
+              style={{
+                fontSize: "20px",
+                fontWeight: "bold",
+                textAlign: "center",
+              }}
+            >
+              {" "}
+              Brokerage Account
+            </p>
+          </div>
 
-        <div className="icon">
-          <img src={notificate} alt="" />
-          <img src={setting} alt="" />
+          <div className="icon">
+            <img src={notificate} alt="" />
+            <img src={setting} alt="" />
+          </div>
+        </div>
+        <div className="header2">
+          <div className="">
+            <h1>Hi, Welcome Back Jude</h1>
+
+            <h4 className="header-text">{getCurrentDate()}</h4>
+          </div>
+          <div id="buttons">
+            <button className="primary">Get Started</button>
+            <button className="secondary">Deposit</button>
+            <img src={menu} alt="hsd" id="menu" />
+          </div>
+        </div>
+        <br /> <br />
+        <div className="trusted-partners">
+          <p className="text">Trusted Partners</p>
+          <div className="trusted-partners-section window">
+            <div>
+              <div>
+                <img src={exness} alt="exnesslogo" className="yellow" />
+                
+                  <RateSection rating={4.5} href="http://example.com" />
+                
+              </div>
+              <div>
+                <img src={FPMarketsLog} alt="exnesslogo" className="blue" />
+                <RateSection rating={4.7} href="http://example.com" />
+              </div>
+              <div>
+                <img src={fxpro} alt="exnesslogo" className="red" />
+                <RateSection rating={4.5} href="http://example.com" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <img
+                  src={pepperstone}
+                  alt="exnesslogo"
+                  className="white-background"
+                />
+                <RateSection rating={4.5} href="http://example.com" />
+              </div>
+              <div>
+                <img
+                  src={vatage}
+                  alt="exnesslogo"
+                  className="white-background"
+                />
+                <RateSection rating={4.5} href="http://example.com" />
+              </div>
+              <div>
+                <img
+                  src={swiss}
+                  alt="exnesslogo"
+                  className="white-background"
+                />
+                <RateSection rating={4.5} href="http://example.com" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <img
+                  src={mindmoney}
+                  alt="exnesslogo"
+                  className="white-background"
+                />
+                <RateSection rating={4.5} href="http://example.com" />
+              </div>
+              <div>
+                <img src={xm} alt="exnesslogo" className="white-background" />
+                <RateSection rating={4.5} href="http://example.com" />
+              </div>
+              <div>
+                <img
+                  src={capex}
+                  alt="exnesslogo"
+                  className="white-background"
+                />
+                <RateSection rating={4.5} href="http://example.com" />
+              </div>
+            </div>
+          </div>
+
+          {/* for mobile view */}
+          <div className="trusted-partners-section mobile">
+            <div>
+              <div>
+                <img
+                  src={exness}
+                  alt="exnesslogo"
+                  className="yellow icon-width"
+                />
+                <RateSection rating={4.9} href="http://example.com" />
+              </div>
+              <div>
+                <img
+                  src={FPMarketsLog}
+                  alt="exnesslogo"
+                  className="blue icon-width"
+                />
+                <RateSection rating={4.7} href="http://example.com" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <img
+                  src={pepperstone}
+                  alt="exnesslogo"
+                  className="white-background icon-width"
+                />
+                <RateSection rating={4.5} href="http://example.com" />
+              </div>
+              <div>
+                <img
+                  src={vatage}
+                  alt="exnesslogo"
+                  className="white-background icon-width"
+                />
+                <RateSection rating={4.5} href="http://example.com" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src={xm} alt="exnesslogo" className="white-background" />
+                <RateSection rating={4.5} href="http://example.com" />
+              </div>
+
+              <div>
+                <img
+                  src={capex}
+                  alt="exnesslogo"
+                  className="white-background"
+                />
+                <RateSection rating={4.5} href="http://example.com" />
+              </div>
+            </div>
+            <div>
+              <div>
+                <img src={fxpro} alt="exnesslogo" className="red" />
+                <RateSection rating={4.5} href="http://example.com" />
+              </div>
+              <div>
+                <img
+                  src={swiss}
+                  alt="exnesslogo"
+                  className="white-background"
+                />
+                <RateSection rating={4.5} href="http://example.com" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="header2">
-        <div className="">
-          <h1>Hi, Welcome Back Jude</h1>
-
-          <h4 className="header-text">{getCurrentDate()}</h4>
-        </div>
-        <div id="buttons">
-          <button className="primary">Get Started</button>
-          <button className="secondary">Deposit</button>
-          <img src={menu} alt="hsd" id="menu" />
-        </div>
-      </div>
-      <br /> <br />
-      <div className="trusted-partners">
-        <p className="text">Trusted Partners</p>
-        <div className="trusted-partners-section window">
-          <div>
-            <div>
-              <img src={exness} alt="exnesslogo" className="yellow" />
-              <RateSection rating={4.9} href="http://example.com" />
-            </div>
-            <div>
-              <img src={FPMarketsLog} alt="exnesslogo" className="blue" />
-              <RateSection rating={4.7} href="http://example.com" />
-            </div>
-            <div>
-              <img src={fxpro} alt="exnesslogo" className="red" />
-              <RateSection rating={4.5} href="http://example.com" />
-            </div>
-          </div>
-          <div >
-       
-            <div>
-              <img
-                src={pepperstone}
-                alt="exnesslogo"
-                className="white-background"
-              />
-              <RateSection rating={4.5} href="http://example.com" />
-            </div>
-            <div>
-              <img src={vatage} alt="exnesslogo" className="white-background" />
-              <RateSection rating={4.5} href="http://example.com" />
-            </div>
-            <div>
-              <img src={swiss} alt="exnesslogo" className="white-background" />
-              <RateSection rating={4.5} href="http://example.com" />
-            </div>
-          </div>
-          <div  >
-            <div>
-              <img
-                src={mindmoney}
-                alt="exnesslogo"
-                className="white-background"
-              />
-              <RateSection rating={4.5} href="http://example.com" />
-            </div>
-            <div>
-              <img src={xm} alt="exnesslogo" className="white-background" />
-              <RateSection rating={4.5} href="http://example.com" />
-            </div>
-            <div>
-              <img src={capex} alt="exnesslogo" className="white-background" />
-              <RateSection rating={4.5} href="http://example.com" />
-            </div>
-          </div>
-          
-        </div>
-
-
-        {/* for mobile view */}
-        <div className="trusted-partners-section mobile">
-          <div>
-            <div>
-              <img src={exness} alt="exnesslogo" className="yellow icon-width" />
-              <RateSection rating={4.9} href="http://example.com" />
-            </div>
-            <div>
-              <img src={FPMarketsLog} alt="exnesslogo" className="blue icon-width" />
-              <RateSection rating={4.7} href="http://example.com" />
-            </div>
-           
-          </div>
-          <div >
-            <div>
-              <img
-                src={pepperstone}
-                alt="exnesslogo"
-                className="white-background icon-width"
-              />
-              <RateSection rating={4.5} href="http://example.com" />
-            </div>
-            <div>
-              <img src={vatage} alt="exnesslogo" className="white-background icon-width" />
-              <RateSection rating={4.5} href="http://example.com" />
-            </div>
-           
-          </div>
-          <div>
-          <div>
-              <img src={xm} alt="exnesslogo" className="white-background" />
-              <RateSection rating={4.5} href="http://example.com" />
-            </div>
-           
-            <div>
-              <img src={capex} alt="exnesslogo" className="white-background" />
-              <RateSection rating={4.5} href="http://example.com" />
-            </div>
-          </div>
-          <div>
-          <div>
-              <img src={fxpro} alt="exnesslogo" className="red" />
-              <RateSection rating={4.5} href="http://example.com" />
-            </div>
-            <div>
-              <img src={swiss} alt="exnesslogo" className="white-background" />
-              <RateSection rating={4.5} href="http://example.com" />
-            </div>
-           
-          </div>
-        </div>
-      </div>
-     </div>
-     <Footer/>
-   </>
+    </>
   );
 }
 

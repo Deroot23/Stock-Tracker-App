@@ -18,8 +18,7 @@ import mariam from "../assets/images/mariam.svg";
   import abbas from "../assets/images/abbas.svg";
   import lateef from "../assets/images/lateef.svg";
   import Zakarayyah from "../assets/images/Zakarayyah.svg";
-  import Footer from "../components/footer"
-  import ifeeayin from "../assets/images/ifeeayin.svg";
+    import ifeeayin from "../assets/images/ifeeayin.svg";
 
 
 
@@ -29,8 +28,8 @@ function Team() {
     return (
       <div className='team-member'>
         <img src={imgSrc} alt={name}  />
-        <p>{name}</p>
-        <p>{role}</p>
+        <p style={{textAlign:"center"}}>{name}</p>
+        <p style={{textAlign:"center"}}>{role}</p>
       </div>
     );
   };
@@ -50,8 +49,7 @@ function Team() {
     return new Date().toLocaleDateString("en-US", options);
   };
 
-  // Capitalized component name
-  return (
+   return (
  < >
 
     <div className="dashboard">
@@ -162,8 +160,7 @@ function Team() {
     </div>
      </div>
     </div>
-    <Footer/>
-    </ >
+     </ >
 
   );
 }
