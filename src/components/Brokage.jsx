@@ -18,6 +18,7 @@ import mindmoney from "../assets/images/mindmoney.svg";
 import swiss from "../assets/images/swiss.svg";
 import FPMarketsLog from "../assets/images/FPMarketsLog.svg";
 import capex from "../assets/images/capex.svg";
+import { Link } from "react-router-dom";
 
 function Brokage() {
   const RateSection = ({ rating, href }) => {
@@ -110,8 +111,8 @@ function Brokage() {
             <h4 className="header-text">{getCurrentDate()}</h4>
           </div>
           <div id="buttons">
-            <button className="primary">Get Started</button>
-            <button className="secondary">Deposit</button>
+          <Link to="/signup">           <button className="primary">Get Started</button>
+          </Link>            <button className="secondary">Deposit</button>
             <img src={menu} alt="hsd" id="menu" />
           </div>
         </div>

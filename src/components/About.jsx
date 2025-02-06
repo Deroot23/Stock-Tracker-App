@@ -6,6 +6,7 @@ import notificate from "../assets/images/notificate.svg";
  import setting from "../assets/images/setting.svg";
 import about from "../assets/images/Abouti.svg";
  import '../assets/css/about.css'
+ import { Link } from 'react-router-dom';
 
  
 function About() {
@@ -66,8 +67,8 @@ About Us            </span>
             <h4 className="header-text">{getCurrentDate()}</h4>
           </div>
           <div id="buttons">
-            <button className="primary">Get Started</button>
-            <button className="secondary">Deposit</button>
+          <Link to="/signup">           <button className="primary">Get Started</button>
+          </Link>            <button className="secondary">Deposit</button>
             <img src={menu} alt="hsd" id="menu" />
           </div>
         </div>

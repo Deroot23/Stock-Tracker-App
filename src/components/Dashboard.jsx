@@ -8,7 +8,8 @@ import notificate from "../assets/images/notificate.svg";
 import hambegr from "../assets/images/hambegr.svg";
 import sail from "../assets/images/sail.svg";
 import setting from "../assets/images/setting.svg";
- function Dashboard() {
+import { Link } from "react-router-dom";
+  function Dashboard() {
   const getCurrentDate = () => {
     const options = {
       weekday: "long",
@@ -53,7 +54,9 @@ import setting from "../assets/images/setting.svg";
           <h4 className="header-text">{getCurrentDate()}</h4>
         </div>
         <div id="buttons">
-          <button className="primary">Get Started</button>
+          <Link to="/signup">           <button className="primary">Get Started</button>
+          </Link>
+          {/* <button className="primary">Get Started</button> */}
           <button className="secondary">Deposit</button>
           <img src={menu} alt="hsd" id="menu"  />
         </div>

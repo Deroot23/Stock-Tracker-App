@@ -9,6 +9,7 @@ import setting from "../assets/images/setting.svg";
  
 import analytics from '../assets/images/analytics.svg';
 import trendind  from  '../assets/images/trendind.svg'
+import { Link } from 'react-router-dom';
 
 function Analytics() {
   
@@ -72,8 +73,8 @@ function Analytics() {
             <h4 className="header-text">{getCurrentDate()}</h4>
           </div>
           <div id="buttons">
-            <button className="primary">Get Started</button>
-            <button className="secondary">Deposit</button>
+          <Link to="/signup">           <button className="primary">Get Started</button>
+          </Link>            <button className="secondary">Deposit</button>
             <img src={menu} alt="hsd" id="menu" />
           </div>
         </div>

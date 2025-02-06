@@ -1,4 +1,5 @@
  import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import "../assets/css/dashboard.css";
 import "../assets/css/brokage.css";
  
@@ -100,8 +101,8 @@ function Team() {
           <h4 className="header-text">{getCurrentDate()}</h4>
         </div>
         <div id="buttons">
-          <button className="primary">Get Started</button>
-          <button className="secondary">Deposit</button>
+        <Link to="/signup">           <button className="primary">Get Started</button>
+        </Link>          <button className="secondary">Deposit</button>
           <img src={menu} alt="hsd" id="menu" />
         </div>
       </div>

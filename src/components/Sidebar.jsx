@@ -27,7 +27,6 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isWatchListVisible, setIsWatchListVisible] = useState(true);
-
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
   };
@@ -38,17 +37,20 @@ const Sidebar = () => {
 
  
   
- useEffect(() => {
-    console.log("Updating theme", isDarkMode ? "Dark" : "Light");
-    if (isDarkMode) {
-      document.body.classList.add("dark-mode");
-      document.body.classList.remove("light-mode");
-    } else {
-      document.body.classList.add("light-mode");
-      document.body.classList.remove("dark-mode");
-    }
-  }, [isDarkMode]);
-
+//  useEffect(() => {
+//     // console.log("Updating theme", isDarkMode ? "Dark" : "Light");
+//     if (isDarkMode) {
+//       document.body.classList.add("dark-mode");
+//       document.body.classList.remove("light-mode");
+//     } else {
+//       document.body.classList.add("light-mode");
+//       document.body.classList.remove("dark-mode");
+//     }
+//   }, [isDarkMode]);
+useEffect(() => {
+  document.body.classList.toggle("dark-mode", isDarkMode);
+  document.body.classList.toggle("light-mode", !isDarkMode);
+}, [isDarkMode]);
   const menu = () => {
     const sideBar = document.getElementById('sideBar');
     if (sideBar) {
