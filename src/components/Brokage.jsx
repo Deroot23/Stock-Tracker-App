@@ -1,9 +1,9 @@
 // import "../assets/css/dashboard.css";
 import "../assets/css/brokage.css";
+import "../assets/css/sidebar.css";
 
 import menu from "../assets/images/menu.svg";
 import notificate from "../assets/images/notificate.svg";
-import hambegr from "../assets/images/hambegr.svg";
 import setting from "../assets/images/setting.svg";
 import co2 from "../assets/images/co2.svg";
 import exness from "../assets/images/exness.svg";
@@ -19,12 +19,17 @@ import swiss from "../assets/images/swiss.svg";
 import FPMarketsLog from "../assets/images/FPMarketsLog.svg";
 import capex from "../assets/images/capex.svg";
 import { Link } from "react-router-dom";
+import Sidebar, { Hamg } from '../components/Sidebar'; // Adjust the path if necess
 
 function Brokage() {
+
   const RateSection = ({ rating, href }) => {
     return (
       <>
-        <main className="rate-section" style={{padding:"0", display:"flex"}}>
+        <main
+          className="rate-section"
+          style={{ padding: "0", display: "flex" }}
+        >
           {[...Array(5)].map((_, index) => (
             <img key={index} src={rate} alt="rate" />
           ))}
@@ -81,7 +86,11 @@ function Brokage() {
               Brokerage Account
             </span>
           </div>
-          <img src={hambegr} alt="" id="hamg" />
+          <div>
+          <Hamg />
+<Sidebar/>
+            {/* <img src={hambegr} alt="" id="hambeger-mobile" onClick={hambeger} /> */}
+          </div>
         </div>
         <div className="mobile-menu"></div>
         <div className="header">
@@ -100,8 +109,8 @@ function Brokage() {
           </div>
 
           <div className="icon">
-            <img src={notificate} alt="" />
-            <img src={setting} alt="" />
+            <img src={notificate} alt="" className="not" />
+            <img src={setting} alt="" className="setting" />
           </div>
         </div>
         <div className="header2">
@@ -111,8 +120,10 @@ function Brokage() {
             <h4 className="header-text">{getCurrentDate()}</h4>
           </div>
           <div id="buttons">
-          <Link to="/signup">           <button className="primary">Get Started</button>
-          </Link>            <button className="secondary">Deposit</button>
+            <Link to="/signup">
+               <button className="primary">Get Started</button>
+            </Link>
+            <button className="secondary">Deposit</button>
             <img src={menu} alt="hsd" id="menu" />
           </div>
         </div>
@@ -123,9 +134,8 @@ function Brokage() {
             <div>
               <div>
                 <img src={exness} alt="exnesslogo" className="yellow" />
-                
-                  <RateSection rating={4.5} href="http://example.com" />
-                
+
+                <RateSection rating={4.5} href="http://example.com" />
               </div>
               <div>
                 <img src={FPMarketsLog} alt="exnesslogo" className="blue" />

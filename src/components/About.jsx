@@ -5,8 +5,10 @@ import menu from "../assets/images/menu.svg";
 import notificate from "../assets/images/notificate.svg";
  import setting from "../assets/images/setting.svg";
 import about from "../assets/images/Abouti.svg";
+import hambegr from "../assets/images/hambegr.svg";
  import '../assets/css/about.css'
  import { Link } from 'react-router-dom';
+ 
 
  
 function About() {
@@ -39,7 +41,7 @@ function About() {
             >
 About Us            </span>
           </div>
-          <img src={about} alt="" id="hamg" />
+          <img src={hambegr} alt="" id="hamg" />
         </div>
         <div className="mobile-menu"></div>
         <div className="header">
