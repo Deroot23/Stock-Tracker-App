@@ -98,6 +98,9 @@
      
   
   }
+  #logo{
+    border-radius: 50%;
+  }
   #content{
     font-size: 10px;
      width: 100%;
@@ -227,3 +230,20 @@
       display: block;
     }
     };
+    #arrow-mobile {
+      transition: transform 2s;
+      transform-style: preserve-3d; /* Ensures 3D effect */
+    
+    }
+    @keyframes rotateAnimation {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    
+  #arrow-mobile {
+      animation: rotateAnimation 2s infinite linear;
+    }      

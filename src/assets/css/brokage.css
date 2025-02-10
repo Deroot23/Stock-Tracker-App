@@ -216,6 +216,54 @@ a:hover{
       
          /* width: fit-content; */
       }
-      .setting{
-        transform: rotateX(360deg);
+/*       
+      .setting {
+        animation: rotateAnimation 2s infinite linear;
+        transform-style: preserve-3d;
       }
+      
+      @keyframes rotateAnimation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(-360deg); 
+        }
+      } */
+      /* .setting {
+        transition: transform 2s;
+      }
+      
+      .setting:hover {
+        transform: rotate(-360deg);
+      } */
+      .setting {
+ 
+        animation: rotateAnimation 2s infinite linear reverse;
+ 
+      }
+      
+    
+      
+      @keyframes moveLeftRight {
+        0% {
+          transform: rotate(0);
+
+        }
+        25% {
+          transform: rotate(30deg); /* Move right */
+        }
+        50% {
+          transform: rotate(0);;  
+        }
+        75% {
+          transform: rotate(-30deg);/* Move right */
+        }
+        100% {
+          transform: rotate(0);
+        }
+      }
+      .not {
+        animation: moveLeftRight 2s infinite   linear;
+      }
+      

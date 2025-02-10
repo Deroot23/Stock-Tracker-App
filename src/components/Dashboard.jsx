@@ -43,8 +43,8 @@ import { Link } from "react-router-dom";
  
 
         <div className="icon">
-          <img src= {notificate} alt="" />
-          <img src={setting} alt="" />
+          <img src= {notificate} alt=""  className="not"  />
+          <img src={setting} alt=""  className="setting" />
         </div>
       </div>
       <div className="header2">

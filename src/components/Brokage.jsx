@@ -19,10 +19,10 @@ import swiss from "../assets/images/swiss.svg";
 import FPMarketsLog from "../assets/images/FPMarketsLog.svg";
 import capex from "../assets/images/capex.svg";
 import { Link } from "react-router-dom";
-import Sidebar, { Hamg } from '../components/Sidebar'; // Adjust the path if necess
-
+import  { Hamg } from '../components/Sidebar'; // Adjust the path if necess
+ 
 function Brokage() {
-
+ 
   const RateSection = ({ rating, href }) => {
     return (
       <>
@@ -88,8 +88,7 @@ function Brokage() {
           </div>
           <div>
           <Hamg />
-<Sidebar/>
-            {/* <img src={hambegr} alt="" id="hambeger-mobile" onClick={hambeger} /> */}
+             {/* <img src={hambegr} alt="" id="hambeger-mobile" onClick={hambeger} /> */}
           </div>
         </div>
         <div className="mobile-menu"></div>
