@@ -2,14 +2,21 @@ import "../assets/css/dashboard.css";
 import "../assets/css/brokage.css";
 import '../assets/css/Analytics.css'
 
+
+ import sales from "../assets/images/sales.png"
+import chart from "../assets/images/chart.png"
+import chart1 from "../assets/images/chart1.png"
+import prices from "../assets/images/prices.png"
+// import option from "../assets/images/options.png"
+ 
 import menu from "../assets/images/menu.svg";
 import notificate from "../assets/images/notificate.svg";
 import hambegr from "../assets/images/hambegr.svg";
 import setting from "../assets/images/setting.svg";
  
 import analytics from '../assets/images/analytics.svg';
-import trendind  from  '../assets/images/trendind.svg'
-import { Link } from 'react-router-dom';
+ import { Link } from 'react-router-dom';
+
 
 function Analytics() {
   
@@ -82,21 +89,45 @@ function Analytics() {
         <div className="trusted-partners">
           <p className="text">Analytics Board</p>
                <div className="analytics-content">
-                <div>
-                </div>
-                <div >   
-                     <section>
-                          <img src={trendind} alt=""  id="trendind"/>
-                     </section>
-                     <section>
-                      <p>
+               <div id="container_content">
+            <div id="wrapper">
+          <div id="sales">
+            <h4>Sales</h4>
+            
+              <h5>2.382</h5>
+              <span>
+              <p id="s_shade">3.382</p>
+              <p>since last week</p></span> 
+             
+              <img src={sales} alt="Sales_img" />
 
-                      </p>
-                     </section>
-                </div>
+              
+
+          </div>
+          <div id="prices">
+            <h4>Prices</h4>
+            
+              <h5>$21.000</h5>
+              <span>
+              <p id="p_shade">3.382</p>
+              <p >since last week</p></span>
+              <img src={prices} alt="prices_img" />
+              
+
+          </div>
+          </div>
+          <div id="container_img">
+            <img id="chart" src={chart} alt="chart_img" />
+            <img id="align" src={chart1} alt="" />
+          </div>
+          
+      </div>
+
+    </div>
+
                </div>
         </div>
-      </div>
+     
      </>
   );
 }

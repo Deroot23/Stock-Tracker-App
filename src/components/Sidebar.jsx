@@ -25,7 +25,7 @@ import  arrowcircleleft from "../assets/images/arrowcircleleft.svg"
  import '../assets/css/sidebar.css'
 import { Link } from "react-router-dom";
 
-export const hamg=()=>{
+export const Hamg=()=>{
   const hambeger = () => {
     const mobile = document.getElementById("mobile");
     if (mobile) {

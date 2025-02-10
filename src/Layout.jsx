@@ -2,8 +2,7 @@
 //  import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Brokage from './components/Brokage'
 // import Team from './components/team'
- 
-import Sidebar from "./components/Sidebar";
+ import Sidebar from "./components/Sidebar";
 import Footer from "./components/footer";
 // import Analytics from "./components/Analytics";
 
@@ -14,6 +13,7 @@ function Layout({ children }) {
       <div style={{ display: "flex", height: "fit-content" }}>
         <Sidebar />
         <div style={{ width: "100%" }}>{children}</div>
+ 
       </div>
       <Footer />
     </>
