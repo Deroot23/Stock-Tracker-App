@@ -1,7 +1,6 @@
 // import "../assets/css/dashboard.css";
 import "../assets/css/brokage.css";
 import "../assets/css/sidebar.css";
-
 import menu from "../assets/images/menu.svg";
 import notificate from "../assets/images/notificate.svg";
 import setting from "../assets/images/setting.svg";
@@ -64,7 +63,6 @@ function Brokage() {
     };
     return new Date().toLocaleDateString("en-US", options);
   };
-
   // Capitalized component name
   return (
     <>

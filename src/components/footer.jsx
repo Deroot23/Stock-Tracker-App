@@ -1,6 +1,8 @@
 // import React from 'react';
 import "../assets/css/footer.css";
-/////  import {profile} from "../assets/images/profile.svg";
+import faq from '../assets/images/faq 1.svg'
+import profile from '../assets/images/profile.svg'
+///import {profile} from "../assets/images/profile.svg";
 
 function Footer() {
   return (
@@ -10,7 +12,7 @@ function Footer() {
           <div className="footer-props">
             <section>
               <div className="legal-disclaimer">
-                <img src="/src/assets/images/profile.svg" alt="profile" />
+                <img src={profile} />
                 <h2>Legal Disclaimer!</h2>
               </div>
               <p className="disclaimer">
@@ -19,7 +21,7 @@ function Footer() {
                 made based on this data.
               </p>
             </section>
-            <section  className="list-props">
+            <section className="list-props">
               <h2>Services</h2>
               <li>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
@@ -39,7 +41,11 @@ function Footer() {
             </section>
             <section className="list-props">
               <h2>Support</h2>
-              <li>Pricing </li>
+              <li>
+                <a href="http://" target="_blank" rel="noopener noreferrer">
+                  Pricing
+                </a>
+              </li>
               <li>
                 <a href="http://" target="_blank" rel="noopener noreferrer">
                   API Status
@@ -53,13 +59,13 @@ function Footer() {
             </section>
             <section>
               <div className="legal-disclaimer">
-                <img src="/src/assets/images/faq 1.svg" alt="FAQ" />
+                <img src={faq}alt="FAQ" />
                 <h2>Frequently Asked Questions.</h2>
               </div>
               <ol>
                 <li>
                   <a href="http://" target="_blank" rel="noopener noreferrer">
-                    How often is stock data updated? 
+                    How often is stock data updated?
                   </a>
                 </li>
                 <li>
@@ -79,30 +85,26 @@ function Footer() {
             <div id="newsletter">
               <div className="pa4-l">
                 <form className="">
-                    <h2 className="disclaimer"> Sign up for our newsletter
-                    </h2>
-                     <div className="">
-                      <p className="disclaimer">
-                        The latest news,article and resources, sent to your
-                        inbox weekly.
-                      </p>
-                      <label className="clip" htmlFor="email-address">
-                        Email Address
-                      </label>
-                      <div className="flex">
+                  <h2 className="disclaimer"> Sign up for our newsletter</h2>
+                  <div className="">
+                    <p className="disclaimer">
+                      The latest news,article and resources, sent to your inbox
+                      weekly.
+                    </p>
+                    <label className="clip" htmlFor="email-address">
+                      Email Address
+                    </label>
+                    <div className="flex">
                       <input
                         placeholder="Your Email Address"
                         type="text"
                         name="email-address"
-                         id="email-address"
+                        id="email-address"
                       />
-                      <button
-                         type="submit"
-                       > Subscribe</button>
-                      </div>
-                      
+                      <button type="submit"> Subscribe</button>
                     </div>
-                 </form>
+                  </div>
+                </form>
               </div>
             </div>
             <div id="social-media" className="pv4 ph2 tc-l">
