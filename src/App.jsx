@@ -1,7 +1,7 @@
 import Dashboard from "./components/Dashboard";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Brokage from './components/Brokage'
-import Team from './components/team'
+import Team from './components/Team'
 import Layout from './Layout';
 import Analytics from './components/Analytics';
 import About from './components/About';
