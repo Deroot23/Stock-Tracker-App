@@ -7,7 +7,7 @@ import menu from "../assets/images/menu.svg";
 import notificate from "../assets/images/notificate.svg";
 import hambegr from "../assets/images/hambegr.svg";
 import setting from "../assets/images/setting.svg";
- import forum from "../assets/images/forum.svg";
+ import forum from "../assets/images/Forum.svg";
   import Hagbazz from "../assets/images/Hagbazz.svg";
   import pere from "../assets/images/pere.svg";
   import isaac1 from "../assets/images/isaac1.svg";
