@@ -63,11 +63,14 @@
     background-color: green;
     padding: 10px 20px;
     border-radius: 5px;
-    text-decoration: none;
+    text-decoration: none !important;
     margin-top: 3px;
     font-size: 25px;
   }
-  
+  .visit-site-button:hover {
+    color: white; /* Ensure the color remains white on hover */
+    background-color: green; /* Ensure the background color remains green on hover */
+  }
   .visit-site-button span img {
     margin-left: 5px;
     width: 15px;
@@ -99,6 +102,7 @@
     font-size: 16px;
     cursor: pointer;
   }
+  
 a:hover{
    color: white;}
    .mobile  {
@@ -243,7 +247,6 @@ a:hover{
  
       }
       
-    
       
       @keyframes moveLeftRight {
         0% {

@@ -92,7 +92,7 @@
   #sideBar{
     /* border: 1px solid blue; */
     background:rgb(0, 0, 0); 
-    height: 100vh;
+    height: fit-content;
     padding: 10px;
   
      
@@ -110,12 +110,12 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 20px;
-    padding-left: 25px;
-    padding-right: 5px;
+    /* padding-left: 25px; */
+    /* padding-right: 5px; */
   }
   #content > :hover{
     background-color: #249cb2;
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 10px;
     text-decoration: none;
    }
@@ -127,7 +127,7 @@
     gap: 10px;
     /* margin-top: 10px; */
     /* border: 1px solid rgb(24, 185, 166); */
-    padding: 1px 10px;
+    padding: 20px ;
     /* padding-left: 20px; */
   }
   
@@ -143,11 +143,10 @@
  
 
   .watchListContent{
-    /* border: solid wheat ; */
+    /* border: solid wheat ;  */
     width:80% ;
     margin: auto;
-  
-    
+    margin-top: 100px;
   }
   .watchListContent h3{
     width: 150px;

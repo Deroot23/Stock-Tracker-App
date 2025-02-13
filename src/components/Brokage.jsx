@@ -38,7 +38,7 @@ function Brokage() {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="visit-site-button"
+          className="visit-site-button"  
         >
           visit site
           <span>
@@ -132,15 +132,15 @@ function Brokage() {
               <div>
                 <img src={exness} alt="exnesslogo" className="yellow" />
 
-                <RateSection rating={4.5} href="http://example.com" />
+                <RateSection rating={4.5} href="https://my.exness.com/accounts/sign-up/?utm_source=partners&gad_source=1&gclid=CjwKCAiAzba9BhBhEiwA7glbamB7VAiTLyXizs1Z8lVWdMuiXiWcyhtBP_Z4NmC22HNphafdDhkhEBoCP6AQAvD_BwE" />
               </div>
               <div>
                 <img src={FPMarketsLog} alt="exnesslogo" className="blue" />
-                <RateSection rating={4.7} href="http://example.com" />
+                <RateSection rating={4.7} href="https://fp-markets.net/sc/row-en/?fpm-affiliate-utm-source=Google/Paid&fpm-affiliate-pcode=G2394-brand-generic-0224-S-D-bk-ROW-126&gad_source=1&gclid=CjwKCAiAzba9BhBhEiwA7glbajkzB0bVlFnUMIU0-VxTKANgyuol_tgWkuPUAOfPqDkvdEUdAMBOOBoCBV4QAvD_BwE" />
               </div>
               <div>
                 <img src={fxpro} alt="exnesslogo" className="red" />
-                <RateSection rating={4.5} href="http://example.com" />
+                <RateSection rating={4.5} href="https://direct.fxpro.group/en/login?redirect=%2Fen%2Fwallet%2Fdeposit&utm_source=google&utm_medium=cpc&utm_term=fxpro&utm_campaign=gads_fxpro_web_all-platforms_non-cfd_NG_Search_Standard_Other_Brand-Generic_01-2021_lang-en&gad_source=1&gclid=CjwKCAiAzba9BhBhEiwA7glbahusNSqRY0vVH7YKtFdMz3u9bBLlepoJ8ECnjTpR5hvneiX0nqEY_hoCHo4QAvD_BwE&gclsrc=aw.ds" />
               </div>
             </div>
             <div>
@@ -158,7 +158,7 @@ function Brokage() {
                   alt="exnesslogo"
                   className="white-background"
                 />
-                <RateSection rating={4.5} href="http://example.com" />
+                <RateSection rating={4.5} href="https://www.vantagemarkets.com/en-za/" />
               </div>
               <div>
                 <img
@@ -166,7 +166,7 @@ function Brokage() {
                   alt="exnesslogo"
                   className="white-background"
                 />
-                <RateSection rating={4.5} href="http://example.com" />
+                <RateSection rating={4.5} href="https://www.swissquote.com/en-row/private" />
               </div>
             </div>
             <div>
@@ -176,11 +176,11 @@ function Brokage() {
                   alt="exnesslogo"
                   className="white-background"
                 />
-                <RateSection rating={4.5} href="http://example.com" />
+                <RateSection rating={4.5} href="https://mind-money.eu/en/" />
               </div>
               <div>
                 <img src={xm} alt="exnesslogo" className="white-background" />
-                <RateSection rating={4.5} href="http://example.com" />
+                <RateSection rating={4.5} href="https://www.forextime.com/" />
               </div>
               <div>
                 <img
@@ -188,7 +188,7 @@ function Brokage() {
                   alt="exnesslogo"
                   className="white-background"
                 />
-                <RateSection rating={4.5} href="http://example.com" />
+                <RateSection rating={4.5} href="https://capex.com/en" />
               </div>
             </div>
           </div>
@@ -202,7 +202,7 @@ function Brokage() {
                   alt="exnesslogo"
                   className="yellow icon-width"
                 />
-                <RateSection rating={4.9} href="http://example.com" />
+                <RateSection rating={4.9} href="https://my.exness.com/accounts/sign-up/?utm_source=partners&gad_source=1&gclid=CjwKCAiAzba9BhBhEiwA7glbamB7VAiTLyXizs1Z8lVWdMuiXiWcyhtBP_Z4NmC22HNphafdDhkhEBoCP6AQAvD_BwE" />
               </div>
               <div>
                 <img
@@ -210,7 +210,7 @@ function Brokage() {
                   alt="exnesslogo"
                   className="blue icon-width"
                 />
-                <RateSection rating={4.7} href="http://example.com" />
+                <RateSection rating={4.7} href="https://fp-markets.net/sc/row-en/?fpm-affiliate-utm-source=Google/Paid&fpm-affiliate-pcode=G2394-brand-generic-0224-S-D-bk-ROW-126&gad_source=1&gclid=CjwKCAiAzba9BhBhEiwA7glbajkzB0bVlFnUMIU0-VxTKANgyuol_tgWkuPUAOfPqDkvdEUdAMBOOBoCBV4QAvD_BwE" />
               </div>
             </div>
             <div>
@@ -228,13 +228,13 @@ function Brokage() {
                   alt="exnesslogo"
                   className="white-background icon-width"
                 />
-                <RateSection rating={4.5} href="http://example.com" />
+                <RateSection rating={4.5} href="https://www.vantagemarkets.com/en-za/" />
               </div>
             </div>
             <div>
               <div>
                 <img src={xm} alt="exnesslogo" className="white-background" />
-                <RateSection rating={4.5} href="http://example.com" />
+                <RateSection rating={4.5} href="https://www.forextime.com/" />
               </div>
 
               <div>
@@ -243,13 +243,13 @@ function Brokage() {
                   alt="exnesslogo"
                   className="white-background"
                 />
-                <RateSection rating={4.5} href="http://example.com" />
+                <RateSection rating={4.5} href='https://capex.com/en' />
               </div>
             </div>
             <div>
               <div>
                 <img src={fxpro} alt="exnesslogo" className="red" />
-                <RateSection rating={4.5} href="http://example.com" />
+                <RateSection rating={4.5} href="https://direct.fxpro.group/en/login?redirect=%2Fen%2Fwallet%2Fdeposit&utm_source=google&utm_medium=cpc&utm_term=fxpro&utm_campaign=gads_fxpro_web_all-platforms_non-cfd_NG_Search_Standard_Other_Brand-Generic_01-2021_lang-en&gad_source=1&gclid=CjwKCAiAzba9BhBhEiwA7glbahusNSqRY0vVH7YKtFdMz3u9bBLlepoJ8ECnjTpR5hvneiX0nqEY_hoCHo4QAvD_BwE&gclsrc=aw.ds" />
               </div>
               <div>
                 <img
@@ -257,7 +257,7 @@ function Brokage() {
                   alt="exnesslogo"
                   className="white-background"
                 />
-                <RateSection rating={4.5} href="http://example.com" />
+                <RateSection rating={4.5} href="https://www.swissquote.com/en-row/private" />
               </div>
             </div>
           </div>
